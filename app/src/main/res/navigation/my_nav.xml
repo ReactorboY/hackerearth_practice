@@ -17,11 +17,11 @@
             android:id="@+id/action_mainFragment_to_friendshipFragment"
             app:destination="@id/friendshipFragment" />
         <action
-            android:id="@+id/action_mainFragment_to_favFragment"
-            app:destination="@id/favFragment" />
-        <action
             android:id="@+id/action_mainFragment_to_shayariQoutesFragment"
             app:destination="@id/shayariQoutesFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_romanceFragment"
+            app:destination="@id/romanceFragment" />
     </fragment>
     <fragment
         android:id="@+id/loveFragment"
@@ -34,13 +34,13 @@
         android:label="fragment_friendship"
         tools:layout="@layout/fragment_friendship" />
     <fragment
-        android:id="@+id/favFragment"
-        android:name="com.organicpy.loveshayarihindi.imagestatus.FavFragment"
-        android:label="fragment_fav"
-        tools:layout="@layout/fragment_fav" />
-    <fragment
         android:id="@+id/shayariQoutesFragment"
         android:name="com.organicpy.loveshayarihindi.imagestatus.ShayariQoutesFragment"
         android:label="fragment_shayari_qoutes"
         tools:layout="@layout/fragment_shayari_qoutes" />
+    <fragment
+        android:id="@+id/romanceFragment"
+        android:name="com.organicpy.loveshayarihindi.imagestatus.RomanceFragment"
+        android:label="fragment_romance"
+        tools:layout="@layout/fragment_romance" />
 </navigation>

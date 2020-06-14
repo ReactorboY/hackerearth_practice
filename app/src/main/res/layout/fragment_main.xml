@@ -1,14 +1,201 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainFragment">
-
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+<ScrollView android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scroll_it"
+    app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+    android:background="@color/colorAccent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
-
-</FrameLayout>
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <androidx.gridlayout.widget.GridLayout
+            android:id="@+id/main_grid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:columnCount="2"
+            app:alignmentMode="alignMargins"
+            android:padding="10dp">
+            <com.google.android.material.card.MaterialCardView
+                app:cardElevation="3dp"
+                android:layout_margin="8dp"
+                android:clickable="true"
+                android:focusable="true"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp">
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:background="@drawable/heartcard"
+                        android:contentDescription="@string/app_name"
+                        app:layout_constraintBottom_toTopOf="@id/textView"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        style="@style/card_image" />
+                    <TextView
+                        android:id="@+id/textView"
+                        android:text="@string/love_shayari_card_text"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/imageView"
+                        style="@style/card_text" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                app:cardElevation="3dp"
+                android:layout_margin="8dp"
+                android:clickable="true"
+                android:focusable="true"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp">
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        style="@style/card_image"
+                        android:background="@drawable/romance"
+                        android:contentDescription="@string/app_name"
+                        app:layout_constraintBottom_toTopOf="@id/textView1"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:text="Romantic Shayari"
+                        style="@style/card_text"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/imageView1" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                app:cardElevation="3dp"
+                android:layout_margin="8dp"
+                android:clickable="true"
+                android:focusable="true"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp">
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        style="@style/card_image"
+                        android:background="@drawable/common_full_open_on_phone"
+                        android:contentDescription="@string/app_name"
+                        app:layout_constraintBottom_toTopOf="@id/textView2"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:text="Basic Text"
+                        style="@style/card_text"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/imageView2" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                app:cardElevation="3dp"
+                android:layout_margin="8dp"
+                android:clickable="true"
+                android:focusable="true"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp">
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        style="@style/card_image"
+                        android:background="@drawable/common_full_open_on_phone"
+                        android:contentDescription="@string/app_name"
+                        app:layout_constraintBottom_toTopOf="@id/textView3"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:text="Basic Text"
+                        style="@style/card_text"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/imageView3" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                app:cardElevation="3dp"
+                android:layout_margin="8dp"
+                android:clickable="true"
+                android:focusable="true"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp">
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        style="@style/card_image"
+                        android:background="@drawable/hearticu"
+                        android:contentDescription="@string/app_name"
+                        app:layout_constraintBottom_toTopOf="@id/textView4"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                    <TextView
+                        android:id="@+id/textView4"
+                        style="@style/card_text"
+                        android:text="@string/card_sadshayari_text"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/imageView4" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                app:cardElevation="3dp"
+                android:layout_margin="8dp"
+                android:clickable="true"
+                android:focusable="true"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp">
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        style="@style/card_image"
+                        android:background="@drawable/favorite"
+                        android:contentDescription="@string/app_name"
+                        app:layout_constraintBottom_toTopOf="@id/textView5"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:text="@string/rate_playstore"
+                        style="@style/card_text"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/imageView5" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </androidx.gridlayout.widget.GridLayout>
+    </LinearLayout>
+</ScrollView>

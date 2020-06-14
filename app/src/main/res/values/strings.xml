@@ -1,8 +1,9 @@
 <resources>
     <string name="app_name">Love Shayari Hindi</string>
     <string name="menu_title">Love Shayari</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="card_sadshayari_text">Sad Shayari App</string>
     <string name="rate_playstore">Rate Us on \nPlay Store</string>
+    <string name="love_shayari_card_text">Love Shayari</string>
+    <string name="adUnitId">ca-app-pub-7762804832614094/7071519359</string>
 </resources>
