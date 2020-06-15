@@ -6,4 +6,7 @@
     <string name="rate_playstore">Rate Us on \nPlay Store</string>
     <string name="love_shayari_card_text">Love Shayari</string>
     <string name="adUnitId">ca-app-pub-7762804832614094/7071519359</string>
+    <string name="romantic_shayari_card_text">Romantic Shayari</string>
+    <string name="friendship_shayari_card_text">Friendship Shayari</string>
+    <string name="love_quotes_card_text">Love Quotes</string>
 </resources>
